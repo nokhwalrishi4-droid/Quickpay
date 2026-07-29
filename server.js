@@ -10,34 +10,7 @@ const serviceAccount = {
   type: "service_account",
   project_id: process.env.FIREBASE_PROJECT_ID || "quickpay-761bf",
   private_key_id: process.env.FIREBASE_PRIVATE_KEY_ID || "fe020c93ecfe04ef392441a5417fb9b054311afd",
-  private_key: (process.env.FIREBASE_PRIVATE_KEY || `-----BEGIN PRIVATE KEY-----
-MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCyHE6/VCypCSET
-8rocEOJC8uyzkVFSTIbENgkwrQlj2sMtoSmasnFGFz05o9ZEbpKFViY+rp4IkPzh
-GaYfOJFJXEFwloItYrEf4iAhd0xXoE3bv+TvRWgAZB78//gPLsN2ZCBH7KHgZqVv
-CeFekiRqY94pxshzxDNKA64p7X2KKFCvR0LuHSORg9Y/WfTbHTsIGP5goOEInby5
-E+SQ8fraAQRkoZnQDhSbvEpLpNoB7Oa12J2ukRkfBkTyDafvm0ixe+1r7RIPAIkg
-VNomKtN4J8twEnxCBLtdxpK6akKzsknLjy6bz0D7sCbwf8km4OdOSn0dg2SOUTxs
-emk5P93VAgMBAAECggEADQIPdKtlITaCRlhLF2AN5lQ8ZvDzpRsWf9LVrcrPDY5Q
-nhu2U8IGKKRR25luCkyfdUJRdyQYDqNOlL7jm99TXRQ/A0YHkK3NWd+RKsbxU56b
-93/dH7Ll+zSH8g2PxF9NKNX8Al5Z6qJ67dBYhI7cpTIeBT14LlxJ+Q6qJ0D2rKK3
-ioiTY73OMSG/icoG6hyPnRmYxQQ5lRn7poM0PJK/EobySJMZBe0KH+Io49NC/cfV
-czi7V5ozPQYj3zBmmy5GWbq4jwqA1JoA+NywxQA/gGxIhaCQZ7AyFriqhuICnT9q
-wt+wfgMLGsZw/myOqqdXIG0bJGVukY3AuGLIE+zyEQKBgQDWoJmU95w1tyqzHnD9
-bUjAAWw2rFADto0uZdN8i4CZf0LA3256xvp1yGDJQDOHJPs0yMFQlG2GFbWATMbF
-GVHASJfjTGi2XD1EfRWcpYeVnAMrSRORprjizhNRgD0j+hs/4SfkkOIYH4IPi/5L
-nxlRHwcyXYpnhay31bn7vvhQDwKBgQDUca7yJly2dOa6tUHtfqx3mYs4T4o7guiu
-IgVtChNZ+DkbdCOW31Vs7agjfWD02FfT/jfEuB1un2JvNnEQg53fGQi2+kGSuobl
-Uvk80CA9shgUu5U1C0hp12TM9DB2hcsnZv/Gw5S+LZu58Llw/jHctikg/n9wyVeX
-jtHcPTWP2wKBgQDRjR5GjvdqjrrXBcrF9RSJuxnfy5+X8H2ppmu1dzMJK3KOg9gH
-cg0KQKkW9WMZ+SZ3o+by+OhyePGsIcoUmKLz/SynFWxLWIXNP9+BATD/BsMlWQUN
-OV3cu92qvm1zmfdPCFN922OUr/a5nTKcvOroBEZvi1rdtmsrVjZvMEabSwKBgE/j
-lFthS7odSerqYKlz2l17cxww5RWuC9v31TyE7nQF4UvOp9eDkrdMw87cxkos1RJW
-Zhhm+EJyU2zo9ymzpPmRi3Jrt5763+F7C1jwFz+8KkwZoml5HbkXk8NzDIp1k8j0
-dbkEMXo24nnQ6ZtxK8UJB3xt1/TM8lB/F7IPnoXDAoGBAK8DIGuMch4i3oto8U8K
-5ZhDuKS6VeecQdNC5QxlnBzAwxsUXPF9bsG2ey9c6x+7aafL9BGI98KBBxb6ARlq
-y7FRsipXZeqU8/0IJsKRmoNIUF1rdPdwrHy0tPQO20o3RX69ZsM+/205u2XETKAC
-TYo4IgLuS5kyFTz4/C9mXjsi
------END PRIVATE KEY-----\n`).replace(/\\n/g, '\n'),
+  
   client_email: process.env.FIREBASE_CLIENT_EMAIL || "firebase-adminsdk-fbsvc@quickpay-761bf.iam.gserviceaccount.com",
   client_id: process.env.FIREBASE_CLIENT_ID || "108902091588883385790",
   auth_uri: "https://accounts.google.com/o/oauth2/auth",
