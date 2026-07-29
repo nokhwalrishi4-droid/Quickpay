@@ -40,7 +40,7 @@
   window.SITE_NAME = "Quick Pay";
   window.STORE_BASE_URL = window.location.origin;
   
-  //  APNA BACKEND URL YAHAN DAALO (Isliye fix hoga Net Error)
+  //  APNA BACKEND URL YAHAN DAALO
   window.API_URL = "https://quickpay-psi.vercel.app";
 </script>
 
@@ -1982,6 +1982,15 @@ async function initFirebaseFromBackend() {
     // 3. Push notifications (FCM)
     window.FCM_VAPID_KEY = data.data.vapidKey || '';
     window._pushAvailable = false;
+    if (window.FCM_VAPID_KEY && await isSupported()) {
+      const messaging = getMessaging(app);
+      window._pushAvailable = true;
+      window.firebaseGetFcmToken = (swRegistration) =>
+        getToken(messaging, { vapidKey: window.FCM_VAPID_KEY, serviceWorkerRegistration: swRegistration });
+      onMessage(messaging, (payload) => {
+        if (typeof window.onFcmForegroundMessage === 'function') window.onFcmForegroundMessage(payload);
+      });
+    }
   } catch (err) {
     console.error('Firebase init error:', err);
     window._firebaseInitError = err.message;
